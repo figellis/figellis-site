@@ -1,3 +1,10 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "compilerOptions": {
+    "strict": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "allowJs": true,
+    "resolveJsonModule": true
+  }
 }

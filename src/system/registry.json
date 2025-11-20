@@ -1,10 +1,8 @@
 {
-  "soft_gold": "#C5A76C",
-  "bone_almond": "#f3eee6",
-  "text_gray_green": "#6f7a78",
-  "fig_reservoir": "#123b35",
-  "medium_jungle": "#1b3a32",
-  "dim_moss": "#2e3b34",
-  "dark_jungle": "#060b09",
-  "black_leather": "#050608"
+  "almond": "#f4ecd9",
+  "softGold": "#C5A76C",
+  "grayGreenText": "#2f3a32",
+  "figReservoir": "#1c3f36",
+  "dimMoss": "#41514d",
+  "mediumJungle": "#1b2e26"
 }

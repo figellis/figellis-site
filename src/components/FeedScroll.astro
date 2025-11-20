@@ -1,0 +1,11 @@
+---
+import data from '../system/fieldnotes.json';
+---
+
+<div style="display:flex;overflow-x:auto;gap:1rem;padding:1rem 0;">
+  {data.map(item => (
+    <a href="/fieldnotes" style="flex:0 0 auto;">
+      <img src={item.image} width="120" height="120" style="object-fit:cover;border-radius:4px;" />
+    </a>
+  ))}
+</div>
