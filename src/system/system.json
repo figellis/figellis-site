@@ -1,0 +1,7 @@
+{
+  "system": "FigE System",
+  "core": "CORE_SYSTEM_04",
+  "environment": "production",
+  "siteUrl": "https://figellis.com",
+  "skinDefault": "skin-default"
+}

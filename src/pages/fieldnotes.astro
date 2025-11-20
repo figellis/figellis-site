@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import fieldnotes from '../system/fieldnotes.json';
+---
+
+<Base title="Fig Ellis — Fieldnotes" skin="skin-deep-reservoir">
+  <div class="shell">
+    <div class="pill">
+      <span class="pill-dot" /> FIELDNOTES · FEED VIEW
+    </div>
+
+    <header style="margin-top: 24px; margin-bottom: 24px;">
+      <div class="field-header">
+        <div>
+          <div class="field-header-title">Fieldnotes Feed</div>
+          <div class="field-header-sub">
+            Snapshots from the system’s periphery — small signals, held lightly.
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="All fieldnotes">
+      {fieldnotes.map((note) => (
+        <article id={note.slug} class="field-card">
+          <div class="field-card-thumb">
+            <span>{note.label}</span>
+          </div>
+          <div class="field-card-meta">
+            <div class="field-card-title">{note.title}</div>
+            <div class="field-card-tags">
+              {note.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+          <div class="field-card-hover">
+            <div class="field-card-hover-title">{note.title}</div>
+            <div class="field-card-hover-desc">{note.description}</div>
+            <div class="field-card-hover-tags">
+              {note.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </section>
+  </div>
+</Base>

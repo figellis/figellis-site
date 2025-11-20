@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "artifact-01",
+    "label": "Artifact 01",
+    "title": "Noir Plant Tile \u2014 Prototype",
+    "description": "Early composite of stalk + vessel + gear spine. Kept for mood, not accuracy.",
+    "tags": [
+      "visual",
+      "system-note"
+    ]
+  },
+  {
+    "slug": "artifact-02",
+    "label": "Artifact 02",
+    "title": "Reservoir Green Click Moment",
+    "description": "The deep blue-leaning green that finally felt like home base.",
+    "tags": [
+      "color",
+      "core-04"
+    ]
+  },
+  {
+    "slug": "artifact-03",
+    "label": "Artifact 03",
+    "title": "Curve That Almost Hugged",
+    "description": "Documenting a near-miss curve to remember what not to repeat.",
+    "tags": [
+      "geometry",
+      "in-progress"
+    ]
+  },
+  {
+    "slug": "artifact-04",
+    "label": "Artifact 04",
+    "title": "Field Light Capture",
+    "description": "Micro still from a drive sequence \u2014 reference for future brand film.",
+    "tags": [
+      "reference",
+      "field-light"
+    ]
+  }
+]

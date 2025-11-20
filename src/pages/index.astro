@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import fieldnotes from '../system/fieldnotes.json';
+---
+
+<Base title="Fig Ellis — Designed in Field Light" skin="skin-default">
+  <div class="shell">
+    <div class="pill">
+      <span class="pill-dot" /> FIG ELLIS · CORE SYSTEM 04
+    </div>
+
+    <section style="margin-top: 24px; margin-bottom: 28px;">
+      <div style="font-size: 32px; font-weight: 500; margin-bottom: 10px;">
+        Fig Ellis
+      </div>
+      <div style="font-size: 14px; color: var(--accent-muted); max-width: 520px;">
+        Architectural simplicity, living systems, and tools — designed in field light.
+      </div>
+    </section>
+
+    <section aria-label="Fieldnotes feed" style="margin-bottom: 40px;">
+      <div class="field-header">
+        <div>
+          <div class="field-header-title">Fieldnotes</div>
+          <div class="field-header-sub">
+            A uniform strip of what the system is noticing right now.
+          </div>
+        </div>
+        <div class="field-header-links">
+          <a href="/fieldnotes">Open full field</a>
+          <a href="/about">About the system</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        {fieldnotes.map((note) => (
+          <a href={`/fieldnotes#${note.slug}`} class="field-card">
+            <div class="field-card-thumb">
+              <span>{note.label}</span>
+            </div>
+            <div class="field-card-meta">
+              <div class="field-card-title">{note.title}</div>
+              <div class="field-card-tags">
+                {note.tags.map((tag) => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section style="font-size: 12px; color: var(--accent-muted); display:flex; justify-content:space-between; gap:12px; align-items:center;">
+      <span>© {new Date().getFullYear()} Figellis, Inc. · FigE System · Core System 04.</span>
+    </section>
+  </div>
+</Base>

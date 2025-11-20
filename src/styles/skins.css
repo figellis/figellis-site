@@ -1,0 +1,21 @@
+:root {
+  --skin-name: 'default';
+}
+
+.skin-default {
+  --bg: #050608;
+  --fg: #f7f1e8;
+  --card-bg: #111318;
+}
+
+.skin-almond {
+  --bg: #f3eee6;
+  --fg: #181919;
+  --card-bg: #ffffff;
+}
+
+.skin-deep-reservoir {
+  --bg: #05080a;
+  --fg: #f5f3ec;
+  --card-bg: #0a1513;
+}
